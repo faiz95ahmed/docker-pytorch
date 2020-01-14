@@ -72,6 +72,9 @@ RUN sudo apt-get update && sudo apt-get install -y --no-install-recommends \
 RUN conda install -y -c menpo opencv3=3.1.0 \
  && conda clean -ya
  
+# Install yagmail
+pip3 install yagmail
+ 
 # Download the benchmark
 RUN git clone https://github.com/faiz95ahmed/pytorch-gpu-benchmark.git
 
